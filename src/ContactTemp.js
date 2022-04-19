@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -84,8 +85,8 @@ export default function ContactTemp() {
                     </div>
                     <div className="d-flex justify-content-center p-5 " id="icons">
                         <Stack spacing={3} direction="row">
-                             <h5>8189970957</h5>
-                             <h4>hkathiresan@gmail.com</h4>
+                           
+                             <motion.div whileHover={{ scale: 1.3 }}><Button href="https://web.whatsapp.com/" target="_blank" variant="outlined" style={{ color: "white" }}><WhatsAppIcon></WhatsAppIcon> &nbsp; 8189970957</Button></motion.div>
                             <motion.div whileHover={{ scale: 1.3 }}><Button href="https://github.com/kathiresanh" target="_blank" variant="outlined" style={{ color: "white" }}><GitHubIcon /> &nbsp; Git Hub</Button></motion.div>
                             {/* <motion.div whileHover={{scale:1.3}}><Button  target="_blank" variant="outlined" style={{color:"white"}}><a href="mailto:hkathiresan@gmail.com">< EmailIcon></EmailIcon> &nbsp; Gmail</a></Button></motion.div>  */}
                             <motion.div whileHover={{ scale: 1.3 }}><Button href="https://www.linkedin.com/in/kathiresan-h-23b84821a/" target="_blank" variant="outlined" style={{ color: "white" }}><LinkedInIcon></LinkedInIcon> &nbsp; Linked In</Button></motion.div>

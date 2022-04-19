@@ -3,6 +3,8 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import LanguageIcon from '@mui/icons-material/Language';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 const itemms = {
@@ -111,13 +113,13 @@ function Content(props) {
 
                  <a className="btn btn-secondary mt-2" href={props.data1.backend} target="_blank">View backend source code</a>
             </div> */}
-            <div className="p-1">
-                <Stack spacing={3} direction="row">
+            <div className="p-2 d-flex justify-content-between ">
+                {/* <Stack spacing={4} direction="row"> */}
                      
-                <Button href={props.data1.website} target="_blank" variant="outlined" style={{color:"black"}}>website</Button>
-                <Button href={props.data1.frontend} target="_blank" variant="outlined" style={{color:"black"}}>Front-end</Button>
-                <Button href={props.data1.backend} target="_blank" variant="outlined" style={{color:"black"}}>Back-end</Button>
-                </Stack>
+                <Button href={props.data1.website} target="_blank" variant="outlined" style={{color:"black"}}><LanguageIcon></LanguageIcon> &nbsp; website</Button>
+                <Button href={props.data1.frontend} target="_blank" variant="outlined" style={{color:"black"}}><GitHubIcon></GitHubIcon> &nbsp; Front-end</Button>
+                <Button href={props.data1.backend} target="_blank" variant="outlined" style={{color:"black"}}><GitHubIcon></GitHubIcon> &nbsp; Back-end</Button>
+                {/* </Stack> */}
             </div>
 
         </motion.div>
